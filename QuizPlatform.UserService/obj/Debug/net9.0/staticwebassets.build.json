@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "nNoVk1XKyPJVDa67z6tASYvnrAU6/vO9dmXFHoB39eI=",
+  "Source": "QuizPlatform.UserService",
+  "BasePath": "_content/QuizPlatform.UserService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

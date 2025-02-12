@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.0.0" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>160b9b73-c96d-4add-8257-76cc2bad7aef</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QuizPlatform.ApiService\QuizPlatform.ApiService.csproj" />
+    <ProjectReference Include="..\QuizPlatform.DbManager\QuizPlatform.DbManager.csproj" />
+    <ProjectReference Include="..\QuizPlatform.QuizService\QuizPlatform.QuizService.csproj" />
+    <ProjectReference Include="..\QuizPlatform.ReportService\QuizPlatform.ReportService.csproj" />
+    <ProjectReference Include="..\QuizPlatform.UserService\QuizPlatform.UserService.csproj" />
+    <ProjectReference Include="..\QuizPlatform.Web\QuizPlatform.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.0.0" />
+    <PackageReference Include="Aspire.Hosting.Keycloak" Version="9.0.0-preview.5.24551.3" />
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="9.0.0" />
+    <PackageReference Include="Aspire.Hosting.RabbitMQ" Version="9.0.0" />
+    <PackageReference Include="Aspire.Hosting.Redis" Version="9.0.0" />
+  </ItemGroup>
+
+</Project>

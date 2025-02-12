@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "iFb0a3ZdNKYBBiWzg71xNfYhJ8FbOSl4TbCd1I/ytCE=",
+  "Source": "QuizPlatform.DbManager",
+  "BasePath": "_content/QuizPlatform.DbManager",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

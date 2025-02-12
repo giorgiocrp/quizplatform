@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "pxmB798UhGNhwOsYx9yMbUmpJrITpDzJLkK4hlIQJZY=",
+  "Source": "QuizPlatform.ReportService",
+  "BasePath": "_content/QuizPlatform.ReportService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

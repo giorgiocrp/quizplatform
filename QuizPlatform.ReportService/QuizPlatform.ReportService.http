@@ -1,0 +1,6 @@
+@QuizPlatform.ReportService_HostAddress = http://localhost:5209
+
+GET {{QuizPlatform.ReportService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

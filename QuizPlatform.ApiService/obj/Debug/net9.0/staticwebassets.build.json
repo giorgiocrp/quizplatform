@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "n++aPCquLalrZHCIMCoXWHCMDTin77t5aTZHUDXtN/I=",
+  "Source": "QuizPlatform.ApiService",
+  "BasePath": "_content/QuizPlatform.ApiService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

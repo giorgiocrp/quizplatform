@@ -1,0 +1,6 @@
+@QuizPlatform.UserService_HostAddress = http://localhost:5057
+
+GET {{QuizPlatform.UserService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

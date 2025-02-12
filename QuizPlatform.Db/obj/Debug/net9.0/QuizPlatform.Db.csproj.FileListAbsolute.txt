@@ -1,0 +1,12 @@
+C:\Esperimenti\QuizPlatform\QuizPlatform.Db\bin\Debug\net9.0\QuizPlatform.Db.deps.json
+C:\Esperimenti\QuizPlatform\QuizPlatform.Db\bin\Debug\net9.0\QuizPlatform.Db.dll
+C:\Esperimenti\QuizPlatform\QuizPlatform.Db\bin\Debug\net9.0\QuizPlatform.Db.pdb
+C:\Esperimenti\QuizPlatform\QuizPlatform.Db\obj\Debug\net9.0\QuizPlatform.Db.csproj.AssemblyReference.cache
+C:\Esperimenti\QuizPlatform\QuizPlatform.Db\obj\Debug\net9.0\QuizPlatform.Db.GeneratedMSBuildEditorConfig.editorconfig
+C:\Esperimenti\QuizPlatform\QuizPlatform.Db\obj\Debug\net9.0\QuizPlatform.Db.AssemblyInfoInputs.cache
+C:\Esperimenti\QuizPlatform\QuizPlatform.Db\obj\Debug\net9.0\QuizPlatform.Db.AssemblyInfo.cs
+C:\Esperimenti\QuizPlatform\QuizPlatform.Db\obj\Debug\net9.0\QuizPlatform.Db.csproj.CoreCompileInputs.cache
+C:\Esperimenti\QuizPlatform\QuizPlatform.Db\obj\Debug\net9.0\QuizPlatform.Db.dll
+C:\Esperimenti\QuizPlatform\QuizPlatform.Db\obj\Debug\net9.0\refint\QuizPlatform.Db.dll
+C:\Esperimenti\QuizPlatform\QuizPlatform.Db\obj\Debug\net9.0\QuizPlatform.Db.pdb
+C:\Esperimenti\QuizPlatform\QuizPlatform.Db\obj\Debug\net9.0\ref\QuizPlatform.Db.dll

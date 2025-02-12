@@ -1,0 +1,12 @@
+C:\Esperimenti\QuizPlatform\QuizPlatform.QuizService\obj\Debug\net9.0\staticwebassets.build.json
+C:\Esperimenti\QuizPlatform\QuizPlatform.ReportService\obj\Debug\net9.0\staticwebassets.build.json
+C:\Esperimenti\QuizPlatform\QuizPlatform.UserService\obj\Debug\net9.0\staticwebassets.build.json
+C:\Esperimenti\QuizPlatform\QuizPlatform.QuizService\obj\Debug\net9.0\staticwebassets.build.json
+C:\Esperimenti\QuizPlatform\QuizPlatform.ReportService\obj\Debug\net9.0\staticwebassets.build.json
+C:\Esperimenti\QuizPlatform\QuizPlatform.UserService\obj\Debug\net9.0\staticwebassets.build.json
+C:\Esperimenti\QuizPlatform\QuizPlatform.QuizService\obj\Debug\net9.0\staticwebassets.build.json
+C:\Esperimenti\QuizPlatform\QuizPlatform.ReportService\obj\Debug\net9.0\staticwebassets.build.json
+C:\Esperimenti\QuizPlatform\QuizPlatform.UserService\obj\Debug\net9.0\staticwebassets.build.json
+C:\Esperimenti\QuizPlatform\QuizPlatform.QuizService\obj\Debug\net9.0\staticwebassets.build.json
+C:\Esperimenti\QuizPlatform\QuizPlatform.ReportService\obj\Debug\net9.0\staticwebassets.build.json
+C:\Esperimenti\QuizPlatform\QuizPlatform.UserService\obj\Debug\net9.0\staticwebassets.build.json
