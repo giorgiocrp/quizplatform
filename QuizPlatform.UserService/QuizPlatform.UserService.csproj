@@ -32,10 +32,7 @@
       <Folder Include="Features\Roles\Commands\" />
       <Folder Include="Features\Roles\DTOs\" />
       <Folder Include="Features\Roles\Queries\" />
-      <Folder Include="Features\Users\Commands\" />
-      <Folder Include="Features\Users\DTOs\" />
       <Folder Include="Model\ValueTypes\" />
-      <Folder Include="Validators\" />
     </ItemGroup>
 
 </Project>

@@ -1,5 +1,6 @@
 using MediatR;
-using QuizPlatform.Db.Models;
+using QuizPlatform.UserService.Model.Entities;
+
 
 namespace QuizPlatform.UserService.Features.Users.Queries.GetUsers;
 

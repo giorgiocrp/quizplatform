@@ -2,6 +2,10 @@ using MediatR;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using QuizPlatform.Db.Models;
+using QuizPlatform.UserService.Features.Users.Commands;
+using QuizPlatform.UserService.Features.Users.Commands.CreateUser;
+using QuizPlatform.UserService.Features.Users.DTOs;
+using QuizPlatform.UserService.Features.Users.Queries.GetUser;
 using QuizPlatform.UserService.Features.Users.Queries.GetUsers;
 
 namespace QuizPlatform.UserService.EndPointDefinitions;
@@ -72,9 +76,11 @@ public static class UserEndpoints
         throw new NotImplementedException();
     }
 
-    private static async Task<IResult> NuovoUtente(HttpContext context)
+    private static async Task<IResult> NuovoUtente(IMediator mediator, [FromBody] CreateUserDto utente)
     {
-        throw new NotImplementedException();
+        return await mediator.Send(new CreateUserCommand(utente)) is var result
+            ? Results.Ok(result)
+            : Results.NotFound();
     }
 
     private static async Task<IResult> Logout(HttpContext context)
