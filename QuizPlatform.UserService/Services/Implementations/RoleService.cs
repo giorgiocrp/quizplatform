@@ -1,6 +1,7 @@
 using QuizPlatform.UserService.Model.Entities;
+using QuizPlatform.UserService.Services.Interfaces;
 
-namespace QuizPlatform.UserService.Services;
+namespace QuizPlatform.UserService.Services.Implementations;
 
 public class RoleService:IRoleService
 {

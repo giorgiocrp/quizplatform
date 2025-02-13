@@ -1,7 +1,8 @@
 using QuizPlatform.UserService.Model.Entities;
 using QuizPlatform.UserService.Repositories.Interfaces;
+using QuizPlatform.UserService.Services.Interfaces;
 
-namespace QuizPlatform.UserService.Services;
+namespace QuizPlatform.UserService.Services.Implementations;
 
 public class UserService:IUserService
 {

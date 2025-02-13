@@ -1,6 +1,7 @@
 using MediatR;
 using QuizPlatform.UserService.Model.Entities;
 using QuizPlatform.UserService.Services;
+using QuizPlatform.UserService.Services.Interfaces;
 using RabbitMQ.Client;
 
 namespace QuizPlatform.UserService.Features.Users.Commands.CreateUser;

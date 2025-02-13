@@ -2,6 +2,7 @@ namespace QuizPlatform.Db.Models;
 
 public class Report
 {
-    public Guid Id { get; set; }
+    public int Id { get; set; }
+    public Guid Guid { get; set; }
     public Quiz Quiz { get; set; }
 }

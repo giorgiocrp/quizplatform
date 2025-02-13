@@ -2,7 +2,8 @@ namespace QuizPlatform.Db.Models;
 
 public class Role
 {
-    public Guid Id { get; set; }
-    public string Description { get; set; }
+    public int Id { get; set; }
+    public Guid Guid { get; set; }
+    public string Name { get; set; }
     public virtual List<User> Users { get; set; } = new();
 }

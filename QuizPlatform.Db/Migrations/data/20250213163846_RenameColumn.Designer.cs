@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using QuizPlatform.Db;
@@ -11,9 +12,11 @@ using QuizPlatform.Db;
 namespace QuizPlatform.Db.Migrations.data
 {
     [DbContext(typeof(QuizDataDbContext))]
-    partial class QuizDataDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250213163846_RenameColumn")]
+    partial class RenameColumn
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -179,12 +182,12 @@ namespace QuizPlatform.Db.Migrations.data
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<Guid>("Guid")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("Name")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<Guid>("Guid")
+                        .HasColumnType("uuid");
 
                     b.HasKey("Id");
 
