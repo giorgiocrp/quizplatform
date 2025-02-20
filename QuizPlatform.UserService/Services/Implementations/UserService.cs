@@ -24,6 +24,11 @@ public class UserService:IUserService
 
     public async Task<User> CreateNewUser(User utente)
     {
-        throw new NotImplementedException();
+        return await _userRepository.Add(utente);
+    }
+
+    public async Task<ICollection<User>> GetUserByRole(int requestId, CancellationToken cancellationToken)
+    {
+        return await _userRepository.GetUserByRole(requestId);
     }
 }

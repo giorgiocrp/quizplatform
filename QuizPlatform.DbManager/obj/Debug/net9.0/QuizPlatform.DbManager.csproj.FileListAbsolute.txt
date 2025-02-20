@@ -150,3 +150,4 @@ C:\Esperimenti\QuizPlatform\QuizPlatform.DbManager\obj\Debug\net9.0\QuizPlatform
 C:\Esperimenti\QuizPlatform\QuizPlatform.DbManager\obj\Debug\net9.0\QuizPlatform.DbManager.genruntimeconfig.cache
 C:\Esperimenti\QuizPlatform\QuizPlatform.DbManager\obj\Debug\net9.0\ref\QuizPlatform.DbManager.dll
 C:\Esperimenti\QuizPlatform\QuizPlatform.DbManager\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Esperimenti\QuizPlatform\QuizPlatform.DbManager\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

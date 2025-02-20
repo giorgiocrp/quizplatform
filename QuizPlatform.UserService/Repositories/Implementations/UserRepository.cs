@@ -32,6 +32,48 @@ public class UserRepository:IUserRepository
             throw;
         }
     }
+    
+    public async Task<User> GetByGuid(string guid)
+    {
+        try
+        {
+            var utente = await _dbContext.Users.FirstOrDefaultAsync(t=>t.Guid.ToString()==guid);
+            return _mapper.Map<User>(utente);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine($"Message: {e.Message} Inner: {e.InnerException}");
+            throw;
+        }
+    }
+
+    public async Task<ICollection<User>> GetUserByRole(int requestId)
+    {
+        try
+        {
+            var utente = await _dbContext.Users.Where(t=>t.Role.Id==requestId).ToListAsync();
+            return _mapper.Map<ICollection<User>>(utente);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine($"Message: {e.Message} Inner: {e.InnerException}");
+            throw;
+        }
+    }
+
+    public async Task<ICollection<User>> GetUserByRoleGuid(string guid)
+    {
+        try
+        {
+            var utente = await _dbContext.Users.Where(t=>String.Equals(t.Role.Guid.ToString(),guid)).ToListAsync();
+            return _mapper.Map<ICollection<User>>(utente);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine($"Message: {e.Message} Inner: {e.InnerException}");
+            throw;
+        }
+    }
 
     public async Task<ICollection<User>> GetAll()
     {

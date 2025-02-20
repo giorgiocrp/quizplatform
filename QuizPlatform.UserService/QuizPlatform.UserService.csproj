@@ -29,9 +29,6 @@
     <ItemGroup>
       <Folder Include="Contracts\" />
       <Folder Include="Events\" />
-      <Folder Include="Features\Roles\Commands\" />
-      <Folder Include="Features\Roles\DTOs\" />
-      <Folder Include="Features\Roles\Queries\" />
       <Folder Include="Model\ValueTypes\" />
     </ItemGroup>
 

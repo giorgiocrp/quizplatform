@@ -55,3 +55,4 @@ C:\Esperimenti\QuizPlatform\QuizPlatform.ApiService\obj\Debug\net9.0\refint\Quiz
 C:\Esperimenti\QuizPlatform\QuizPlatform.ApiService\obj\Debug\net9.0\QuizPlatform.ApiService.pdb
 C:\Esperimenti\QuizPlatform\QuizPlatform.ApiService\obj\Debug\net9.0\QuizPlatform.ApiService.genruntimeconfig.cache
 C:\Esperimenti\QuizPlatform\QuizPlatform.ApiService\obj\Debug\net9.0\ref\QuizPlatform.ApiService.dll
+C:\Esperimenti\QuizPlatform\QuizPlatform.ApiService\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

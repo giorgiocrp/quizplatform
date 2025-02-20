@@ -6,6 +6,7 @@ using QuizPlatform.Db;
 using QuizPlatform.Db.Models;
 using QuizPlatform.UserService.EndPointDefinitions;
 using QuizPlatform.UserService.Extensions;
+using QuizPlatform.UserService.Repositories.DbContext;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +14,7 @@ builder.AddServiceDefaults();
 
 // Add services to the container.
 
-builder.AddNpgsqlDbContext<QuizDataDbContext>("neoreportDb",
+builder.AddNpgsqlDbContext<UserDbContext>("quizDb",
     null,
     optionsBuilder => optionsBuilder.UseNpgsql(npgsqlBuilder =>
         npgsqlBuilder.MigrationsAssembly(typeof(Program).Assembly.GetName().Name)));

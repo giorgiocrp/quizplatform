@@ -8,5 +8,6 @@ public class MappingProfile: Profile
     public MappingProfile()
     {
         CreateMap<User,Db.Models.User>().ReverseMap();
+        CreateMap<Role,Db.Models.Role>().ReverseMap();
     }
 }

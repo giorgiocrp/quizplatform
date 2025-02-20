@@ -7,4 +7,5 @@ namespace QuizPlatform.UserService.Repositories.DbContext;
 public class UserDbContext(DbContextOptions<Db.QuizDataDbContext> options) : Microsoft.EntityFrameworkCore.DbContext(options)
 {
     public DbSet<User> Users { get; set; }
+    public DbSet<Role> Roles { get; set; }
 }

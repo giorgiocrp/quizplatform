@@ -2,10 +2,13 @@ using MediatR;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using QuizPlatform.Db.Models;
+using QuizPlatform.UserService.Features.Roles.Queries.GetRoleById;
+using QuizPlatform.UserService.Features.Roles.Queries.GetRoles;
 using QuizPlatform.UserService.Features.Users.Commands;
 using QuizPlatform.UserService.Features.Users.Commands.CreateUser;
 using QuizPlatform.UserService.Features.Users.DTOs;
 using QuizPlatform.UserService.Features.Users.Queries.GetUser;
+using QuizPlatform.UserService.Features.Users.Queries.GetUserByRole;
 using QuizPlatform.UserService.Features.Users.Queries.GetUsers;
 
 namespace QuizPlatform.UserService.EndPointDefinitions;
@@ -22,6 +25,8 @@ public static class UserEndpoints
         userEndpoints.MapGet("/GetRoles", LeggiRuoli).WithName("GetRoles").WithOpenApi().RequireAuthorization();
         userEndpoints.MapGet("/Logout", Logout).WithName("Logout").WithOpenApi();
         
+        userEndpoints.MapGet("/GetRoles", LeggiRuoli).WithName("GetRoles").WithOpenApi().RequireAuthorization();
+        userEndpoints.MapGet("/GetRole/{id}", LeggiRuolo).WithName("GetRole").WithOpenApi().RequireAuthorization();
         userEndpoints.MapPost("/CreateUser", NuovoUtente).WithName("CreateUser").WithOpenApi().RequireAuthorization();
         userEndpoints.MapPost("/CreateRole", NuovoRuolo).WithName("CreateRole").WithOpenApi().RequireAuthorization();
         userEndpoints.MapPost("/AddUserToRole/{iduser}/{idrole}", AggiungiUtenteARuolo).WithName("AddUserToRole").WithOpenApi().RequireAuthorization();
@@ -87,15 +92,26 @@ public static class UserEndpoints
     {
         throw new NotImplementedException();
     }
-
-    private static async Task<IResult> LeggiRuoli(HttpContext context)
+    
+    private static async Task<IResult> LeggiRuolo(IMediator mediator, [FromRoute] int id, CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        return await mediator.Send(new GetRoleByIdQuery(id), cancellationToken) is var result
+            ? Results.Ok(result)
+            : Results.NotFound();
     }
 
-    private static async Task<IResult> LeggiUtentiDaRuolo(HttpContext context)
+    private static async Task<IResult> LeggiRuoli(IMediator mediator, CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        return await mediator.Send(new GetRolesQuery(), cancellationToken) is var result
+            ? Results.Ok(result)
+            : Results.NotFound();
+    }
+
+    private static async Task<IResult> LeggiUtentiDaRuolo(IMediator mediator, [FromRoute] int id, CancellationToken cancellationToken)
+    {
+        return await mediator.Send(new GetUserByRoleQuery(id), cancellationToken) is var result
+            ? Results.Ok(result)
+            : Results.NotFound();
     }
 
     public static async Task<IResult> LeggiUtenti(IMediator mediator, CancellationToken cancellationToken)
