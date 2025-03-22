@@ -12,7 +12,7 @@ using QuizPlatform.Db;
 namespace QuizPlatform.Db.Migrations.data
 {
     [DbContext(typeof(QuizDataDbContext))]
-    [Migration("20250210105954_Initial")]
+    [Migration("20250313120023_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -21,18 +21,18 @@ namespace QuizPlatform.Db.Migrations.data
 #pragma warning disable 612, 618
             modelBuilder
                 .HasDefaultSchema("QuizDataDb")
-                .HasAnnotation("ProductVersion", "9.0.1")
+                .HasAnnotation("ProductVersion", "9.0.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
             modelBuilder.Entity("GroupUser", b =>
                 {
-                    b.Property<Guid>("GroupsId")
-                        .HasColumnType("uuid");
+                    b.Property<int>("GroupsId")
+                        .HasColumnType("integer");
 
-                    b.Property<Guid>("UsersId")
-                        .HasColumnType("uuid");
+                    b.Property<int>("UsersId")
+                        .HasColumnType("integer");
 
                     b.HasKey("GroupsId", "UsersId");
 
@@ -43,8 +43,13 @@ namespace QuizPlatform.Db.Migrations.data
 
             modelBuilder.Entity("QuizPlatform.Db.Models.Group", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<Guid>("Guid")
                         .HasColumnType("uuid");
 
                     b.Property<string>("Name")
@@ -58,14 +63,19 @@ namespace QuizPlatform.Db.Migrations.data
 
             modelBuilder.Entity("QuizPlatform.Db.Models.Quiz", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("integer");
 
-                    b.Property<Guid>("AuthorId")
-                        .HasColumnType("uuid");
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<Guid>("GroupId")
+                    b.Property<int>("AuthorId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("GroupId")
+                        .HasColumnType("integer");
+
+                    b.Property<Guid>("Guid")
                         .HasColumnType("uuid");
 
                     b.Property<string>("Name")
@@ -83,12 +93,17 @@ namespace QuizPlatform.Db.Migrations.data
 
             modelBuilder.Entity("QuizPlatform.Db.Models.Report", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<Guid>("Guid")
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("QuizId")
-                        .HasColumnType("uuid");
+                    b.Property<int>("QuizId")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -99,13 +114,18 @@ namespace QuizPlatform.Db.Migrations.data
 
             modelBuilder.Entity("QuizPlatform.Db.Models.Request", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<Guid>("Guid")
+                        .HasColumnType("uuid");
 
                     b.Property<bool>("IsVisible")
                         .HasColumnType("boolean");
@@ -113,8 +133,8 @@ namespace QuizPlatform.Db.Migrations.data
                     b.Property<int>("Order")
                         .HasColumnType("integer");
 
-                    b.Property<Guid>("QuizId")
-                        .HasColumnType("uuid");
+                    b.Property<int>("QuizId")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -125,19 +145,24 @@ namespace QuizPlatform.Db.Migrations.data
 
             modelBuilder.Entity("QuizPlatform.Db.Models.Response", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<Guid>("Guid")
+                        .HasColumnType("uuid");
+
                     b.Property<int>("Order")
                         .HasColumnType("integer");
 
-                    b.Property<Guid>("RequestId")
-                        .HasColumnType("uuid");
+                    b.Property<int>("RequestId")
+                        .HasColumnType("integer");
 
                     b.Property<int>("Votes")
                         .HasColumnType("integer");
@@ -151,11 +176,16 @@ namespace QuizPlatform.Db.Migrations.data
 
             modelBuilder.Entity("QuizPlatform.Db.Models.Role", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<Guid>("Guid")
                         .HasColumnType("uuid");
 
-                    b.Property<string>("Description")
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -166,9 +196,11 @@ namespace QuizPlatform.Db.Migrations.data
 
             modelBuilder.Entity("QuizPlatform.Db.Models.User", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -178,6 +210,9 @@ namespace QuizPlatform.Db.Migrations.data
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<Guid>("Guid")
+                        .HasColumnType("uuid");
+
                     b.Property<bool>("IsRegistered")
                         .HasColumnType("boolean");
 
@@ -185,8 +220,8 @@ namespace QuizPlatform.Db.Migrations.data
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid>("RoleId")
-                        .HasColumnType("uuid");
+                    b.Property<int>("RoleId")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Surname")
                         .IsRequired()

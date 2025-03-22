@@ -47,7 +47,6 @@ C:\Esperimenti\QuizPlatform\QuizPlatform.Tests\bin\Debug\net9.0\Microsoft.Identi
 C:\Esperimenti\QuizPlatform\QuizPlatform.Tests\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Esperimenti\QuizPlatform\QuizPlatform.Tests\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
 C:\Esperimenti\QuizPlatform\QuizPlatform.Tests\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
-C:\Esperimenti\QuizPlatform\QuizPlatform.Tests\bin\Debug\net9.0\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Esperimenti\QuizPlatform\QuizPlatform.Tests\bin\Debug\net9.0\Microsoft.TestPlatform.CoreUtilities.dll
 C:\Esperimenti\QuizPlatform\QuizPlatform.Tests\bin\Debug\net9.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Esperimenti\QuizPlatform\QuizPlatform.Tests\bin\Debug\net9.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
@@ -181,3 +180,4 @@ C:\Esperimenti\QuizPlatform\QuizPlatform.Tests\bin\Debug\net9.0\FluentValidation
 C:\Esperimenti\QuizPlatform\QuizPlatform.Tests\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Esperimenti\QuizPlatform\QuizPlatform.Tests\bin\Debug\net9.0\MediatR.dll
 C:\Esperimenti\QuizPlatform\QuizPlatform.Tests\bin\Debug\net9.0\MediatR.Contracts.dll
+C:\Esperimenti\QuizPlatform\QuizPlatform.Tests\bin\Debug\net9.0\System.IO.Hashing.dll

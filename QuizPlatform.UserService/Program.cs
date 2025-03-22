@@ -1,6 +1,9 @@
+using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.IdentityModel.Tokens;
 using QuizPlatform.Db;
 using QuizPlatform.Db.Models;
@@ -14,35 +17,34 @@ builder.AddServiceDefaults();
 
 // Add services to the container.
 
-builder.AddNpgsqlDbContext<UserDbContext>("quizDb",
-    null,
-    optionsBuilder => optionsBuilder.UseNpgsql(npgsqlBuilder =>
-        npgsqlBuilder.MigrationsAssembly(typeof(Program).Assembly.GetName().Name)));
+var connectionString=builder.Configuration.GetConnectionString("QuizDataDb");
+builder.Services.AddDbContextPool<UserDbContext>(options =>
+    options.UseNpgsql(connectionString, npgsqlBuilder =>
+        npgsqlBuilder.MigrationsAssembly(typeof(Program).Assembly.GetName().Name))
+        .ConfigureWarnings(warnings => warnings.Log(RelationalEventId.PendingModelChangesWarning)));
+builder.EnrichNpgsqlDbContext<UserDbContext>(settings=>settings.DisableRetry=true);
 
 builder.AddRabbitMQClient("messaging");
 
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddKeycloakJwtBearer(
-        serviceName: "keycloak",
-        realm: "QuizPlatformRealm",
-        configureOptions: options =>
+builder.Services.AddAuthorization();
+builder.Services
+    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(x =>
+    {
+        x.RequireHttpsMetadata = false;
+        x.Audience = builder.Configuration["Authentication:Audience"];
+        x.MetadataAddress = builder.Configuration["Authentication:MetaDataAddress"]!;
+        x.TokenValidationParameters = new TokenValidationParameters
         {
-            options.RequireHttpsMetadata = false;
-            options.Audience = builder.Configuration["Authentication:Audience"];
-            options.MetadataAddress = builder.Configuration["Authentication:MetaDataAddress"]!;
-            options.TokenValidationParameters = new TokenValidationParameters
-            {
-                ValidateIssuer = true,
-                ValidateAudience = true,
-                ValidateLifetime = true,
-                ValidateIssuerSigningKey = true,
-                ValidIssuer = builder.Configuration["Authentication:Issuer"],
-                ValidAudience = builder.Configuration["Authentication:Audience"]
-            };
-        });
-
-builder.Services.AddAuthorizationBuilder();
-
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Authentication:Issuer"],
+            ValidAudience = builder.Configuration["Authentication:Audience"]
+        };
+    });
+   
 builder.RegisterServices();
 
 builder.RegisterDependencies();

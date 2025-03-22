@@ -5,7 +5,7 @@ using QuizPlatform.UserService.Middleware;
 using QuizPlatform.UserService.Profiles;
 using QuizPlatform.UserService.Repositories.Implementations;
 using QuizPlatform.UserService.Repositories.Interfaces;
-using QuizPlatform.UserService.Services;
+using QuizPlatform.UserService.Services.Implementations;
 using QuizPlatform.UserService.Services.Interfaces;
 using Scalar.AspNetCore;
 
@@ -45,6 +45,9 @@ public static class Configuration
         builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
         builder.Services.AddScoped<IUserRepository, UserRepository>();
         builder.Services.AddScoped<IUserService, Services.Implementations.UserService>();
+        builder.Services.AddScoped<IRoleRepository, RoleRepository>();
+        builder.Services.AddScoped<IRoleService, Services.Implementations.RoleService>();
+        builder.Services.AddScoped<IKeycloakService, KeycloakService>();
         // builder.Services.AddScoped<INotificationService, NotificationService>();
         builder.Services.AddAutoMapper(expression =>
         {

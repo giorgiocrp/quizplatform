@@ -18,7 +18,7 @@ namespace QuizPlatform.Db.Migrations.data
 #pragma warning disable 612, 618
             modelBuilder
                 .HasDefaultSchema("QuizDataDb")
-                .HasAnnotation("ProductVersion", "9.0.1")
+                .HasAnnotation("ProductVersion", "9.0.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);

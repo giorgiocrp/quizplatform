@@ -70,3 +70,4 @@ C:\Esperimenti\QuizPlatform\QuizPlatform.AppHost\bin\Debug\net9.0\HealthChecks.R
 C:\Esperimenti\QuizPlatform\QuizPlatform.AppHost\bin\Debug\net9.0\RabbitMQ.Client.dll
 C:\Esperimenti\QuizPlatform\QuizPlatform.AppHost\obj\Debug\net9.0\Aspire\references\QuizPlatform_DbManager.ProjectMetadata.g.cs
 C:\Esperimenti\QuizPlatform\QuizPlatform.AppHost\bin\Debug\net9.0\Aspire.Hosting.Keycloak.dll
+C:\Esperimenti\QuizPlatform\QuizPlatform.AppHost\bin\Debug\net9.0\System.IO.Hashing.dll

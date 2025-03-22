@@ -36,4 +36,3 @@ C:\Esperimenti\QuizPlatform\QuizPlatform.QuizService\bin\Debug\net9.0\FluentVali
 C:\Esperimenti\QuizPlatform\QuizPlatform.QuizService\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Esperimenti\QuizPlatform\QuizPlatform.QuizService\bin\Debug\net9.0\MediatR.dll
 C:\Esperimenti\QuizPlatform\QuizPlatform.QuizService\bin\Debug\net9.0\MediatR.Contracts.dll
-C:\Esperimenti\QuizPlatform\QuizPlatform.QuizService\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

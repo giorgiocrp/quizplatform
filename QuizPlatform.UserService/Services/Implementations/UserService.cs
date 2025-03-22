@@ -31,4 +31,15 @@ public class UserService:IUserService
     {
         return await _userRepository.GetUserByRole(requestId);
     }
+
+    public async Task DeleteUser(int requestId)
+    {
+        var user = await _userRepository.GetById(requestId);
+        await _userRepository.Delete(user);
+    }
+
+    public async Task<User> UpdateUser(User utente)
+    {
+        return await _userRepository.Update(utente); 
+    }
 }

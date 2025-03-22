@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuizPlatform.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db6a6ff468a862c52f74f8eba216e95995fee047")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54446fbac97dcfc0955394f775db5edde9f797f6")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuizPlatform.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuizPlatform.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

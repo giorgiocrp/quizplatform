@@ -197,5 +197,5 @@
     }
   },
   "type": "object",
-  "SourceSegments": "C:\\Users\\gcarp\\.nuget\\packages\\aspire.stackexchange.redis\\9.0.0\\ConfigurationSchema.json;C:\\Users\\gcarp\\.nuget\\packages\\aspire.stackexchange.redis.outputcaching\\9.0.0\\ConfigurationSchema.json"
+  "SourceSegments": "C:\\Users\\gcarp\\.nuget\\packages\\aspire.stackexchange.redis\\9.1.0\\ConfigurationSchema.json;C:\\Users\\gcarp\\.nuget\\packages\\aspire.stackexchange.redis.outputcaching\\9.1.0\\ConfigurationSchema.json"
 }
