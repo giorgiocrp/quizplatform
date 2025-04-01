@@ -404,26 +404,38 @@ FodyWeavers.xsd
 *.sln.iml
 /.idea/.idea.QuizPlatform/.idea/workspace.xml
 /.vs/QuizPlatform/CopilotIndices/17.12.53.23981/SemanticSymbols.db-shm
-/QuizPlatform.ApiService/bin/*
+/QuizPlatform.ApiService/[Bb]in/*
 
-/QuizPlatform.ApiService/obj/*
+/QuizPlatform.ApiService/[Oo]bj/*
 
-/QuizPlatform.AppHost/bin/*
+/QuizPlatform.AppHost/[Bb]in/*
 
-/QuizPlatform.AppHost/obj/*
+/QuizPlatform.AppHost/[Oo]bj/*
 
-/QuizPlatform.Db/bin/*
+/QuizPlatform.Db/[Bb]in/*
 
-/QuizPlatform.Db/obj/*
+/QuizPlatform.Db/[Oo]bj/*
 
-/QuizPlatform.DbManager/bin/*
+/QuizPlatform.DbManager/[Bb]in/*
 
-/QuizPlatform.DbManager/obj/*
+/QuizPlatform.DbManager/[Oo]bj/*
 
-/QuizPlatform.QuizService/bin/*
+/QuizPlatform.QuizService/[Bb]in/*
 
-/QuizPlatform.QuizService/obj/*
+/QuizPlatform.QuizService/[Oo]bj/*
 
-/QuizPlatform.ApiService/bin/*
-/QuizPlatform.ApiService/obj/*
+/QuizPlatform.ReportService/[Bb]in/*
+/QuizPlatform.ReportService/[Oo]bj/*
+
+/QuizPlatform.ServiceDefaults/[Bb]in/*
+/QuizPlatform.ServiceDefaults/[Oo]bj/*
+
+/QuizPlatform.Tests/[Bb]in/*
+/QuizPlatform.Tests/[Oo]bj/*
+
+/QuizPlatform.UserService/[Bb]in/*
+/QuizPlatform.UserService/[Oo]bj/*
+
+/QuizPlatform.Web/[Bb]in/*
+/QuizPlatform.Web/[Oo]bj/*
 
