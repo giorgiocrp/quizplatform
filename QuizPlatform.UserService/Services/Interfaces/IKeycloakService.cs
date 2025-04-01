@@ -8,4 +8,5 @@ public interface IKeycloakService
     Task CreateRole(Role notificationRuolo);
     Task DeleteRole(int notificationId);
     Task DeleteUser(int notificationId);
+    Task UpdateRole(Role notificationRuolo);
 }

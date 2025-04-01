@@ -24,4 +24,9 @@ public class KeycloakService:IKeycloakService
     {
         throw new NotImplementedException();
     }
+
+    public async Task UpdateRole(Role notificationRuolo)
+    {
+        throw new NotImplementedException();
+    }
 }

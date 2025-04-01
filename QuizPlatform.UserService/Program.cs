@@ -31,6 +31,7 @@ builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(x =>
     {
+        x.Authority = builder.Configuration["Authentication:Authority"];
         x.RequireHttpsMetadata = false;
         x.Audience = builder.Configuration["Authentication:Audience"];
         x.MetadataAddress = builder.Configuration["Authentication:MetaDataAddress"]!;

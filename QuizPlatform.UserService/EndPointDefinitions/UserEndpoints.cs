@@ -26,6 +26,8 @@ public static class UserEndpoints
         var userEndpoints = routes.MapGroup("/api/V1/users");
 
         #region User
+
+        userEndpoints.MapGet("/GetPublicData", GetPublicData).WithName("GetPublicData").WithOpenApi();
         userEndpoints.MapGet("/GetUsers", LeggiUtenti).WithName("GetUsers").WithOpenApi().RequireAuthorization();
         userEndpoints.MapGet("/GetUser/{id}", LeggiUtente).WithName("GetUser").WithOpenApi().RequireAuthorization();
         userEndpoints.MapGet("/GetUsersByRole/{id}", LeggiUtentiDaRuolo).WithName("GetUsersByRole").WithOpenApi().RequireAuthorization();
@@ -37,8 +39,8 @@ public static class UserEndpoints
         #endregion
 
         #region Login
-        userEndpoints.MapGet("/Logout", Logout).WithName("Logout").WithOpenApi();
-        userEndpoints.MapPost("/Login", Login).WithName("Login").WithOpenApi();
+        userEndpoints.MapGet("/SignOut", Logout).WithName("Logout").WithOpenApi().RequireAuthorization();
+        userEndpoints.MapPost("/SignIn", Login).WithName("Login").WithOpenApi();
         #endregion
 
         #region Role
@@ -49,6 +51,11 @@ public static class UserEndpoints
         userEndpoints.MapDelete("/DeleteRole/{id}", EliminaRuolo).WithName("DeleteRole").WithOpenApi().RequireAuthorization();
         #endregion
         
+    }
+
+    private static IResult GetPublicData(HttpContext context)
+    {
+        return Results.Ok("Public data");
     }
 
     private static async Task<IResult> EliminaRuolo(IMediator mediator, [FromRoute] int id, CancellationToken cancellationToken)
