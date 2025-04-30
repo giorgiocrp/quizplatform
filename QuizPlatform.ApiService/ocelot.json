@@ -1,0 +1,33 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/V1/quiz/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7054
+        }
+      ],
+      "UpstreamPathTemplate": "/quiz/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/V1/users/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7285
+        }
+      ],
+      "UpstreamPathTemplate": "/user/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5332"
+  },
+  "DynamicRoutes": [],
+  "Aggregates": [] 
+}

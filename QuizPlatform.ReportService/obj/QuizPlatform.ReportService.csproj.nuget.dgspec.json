@@ -54,6 +54,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Aspire.Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.2.1, )"
+            },
+            "Aspire.RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[9.2.1, )"
+            },
             "AutoMapper": {
               "target": "Package",
               "version": "[14.0.0, )"
@@ -68,11 +76,11 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[12.4.1, )"
+              "version": "[12.5.0, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
@@ -94,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

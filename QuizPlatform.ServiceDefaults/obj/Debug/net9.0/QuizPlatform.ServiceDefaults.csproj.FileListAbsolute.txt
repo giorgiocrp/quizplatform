@@ -10,3 +10,4 @@ C:\Esperimenti\QuizPlatform\QuizPlatform.ServiceDefaults\obj\Debug\net9.0\QuizPl
 C:\Esperimenti\QuizPlatform\QuizPlatform.ServiceDefaults\obj\Debug\net9.0\refint\QuizPlatform.ServiceDefaults.dll
 C:\Esperimenti\QuizPlatform\QuizPlatform.ServiceDefaults\obj\Debug\net9.0\QuizPlatform.ServiceDefaults.pdb
 C:\Esperimenti\QuizPlatform\QuizPlatform.ServiceDefaults\obj\Debug\net9.0\ref\QuizPlatform.ServiceDefaults.dll
+C:\Esperimenti\QuizPlatform\QuizPlatform.ServiceDefaults\obj\Debug\net9.0\QuizPlatform.ServiceDefaults.sourcelink.json

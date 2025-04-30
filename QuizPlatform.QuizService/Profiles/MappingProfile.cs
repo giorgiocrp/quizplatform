@@ -1,5 +1,5 @@
 using AutoMapper;
-using QuizPlatform.QuizService.Model.Entities;
+using QuizPlatform.QuizService.Model;
 
 namespace QuizPlatform.QuizService.Profiles;
 

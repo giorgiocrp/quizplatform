@@ -10,3 +10,4 @@ C:\Esperimenti\QuizPlatform\QuizPlatform.Db\obj\Debug\net9.0\QuizPlatform.Db.dll
 C:\Esperimenti\QuizPlatform\QuizPlatform.Db\obj\Debug\net9.0\refint\QuizPlatform.Db.dll
 C:\Esperimenti\QuizPlatform\QuizPlatform.Db\obj\Debug\net9.0\QuizPlatform.Db.pdb
 C:\Esperimenti\QuizPlatform\QuizPlatform.Db\obj\Debug\net9.0\ref\QuizPlatform.Db.dll
+C:\Esperimenti\QuizPlatform\QuizPlatform.Db\obj\Debug\net9.0\QuizPlatform.Db.sourcelink.json

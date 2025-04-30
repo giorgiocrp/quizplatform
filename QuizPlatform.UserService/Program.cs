@@ -26,7 +26,12 @@ builder.EnrichNpgsqlDbContext<UserDbContext>(settings=>settings.DisableRetry=tru
 
 builder.AddRabbitMQClient("messaging");
 
-builder.Services.AddAuthorization();
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminPolicy", policy => policy.RequireClaim("Admin"));
+    options.AddPolicy("UserPolicy", policy => policy.RequireClaim("User"));
+    options.AddPolicy("GuestPolicy", policy => policy.RequireClaim("Guest"));
+});
 builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(x =>

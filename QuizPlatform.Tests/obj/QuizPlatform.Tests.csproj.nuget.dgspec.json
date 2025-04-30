@@ -56,33 +56,33 @@
           "dependencies": {
             "Aspire.Dashboard.Sdk.win-x64": {
               "target": "Package",
-              "version": "[9.1.0, )",
+              "version": "[9.2.1, )",
               "autoReferenced": true
             },
             "Aspire.Hosting.AppHost": {
               "target": "Package",
-              "version": "[9.1.0, )"
+              "version": "[9.2.1, )"
             },
             "Aspire.Hosting.Keycloak": {
               "target": "Package",
-              "version": "[9.1.0-preview.1.25121.10, )"
+              "version": "[9.2.0-preview.1.25121.10, )"
             },
             "Aspire.Hosting.Orchestration.win-x64": {
               "target": "Package",
-              "version": "[9.1.0, )",
+              "version": "[9.2.1, )",
               "autoReferenced": true
             },
             "Aspire.Hosting.PostgreSQL": {
               "target": "Package",
-              "version": "[9.1.0, )"
+              "version": "[9.2.1, )"
             },
             "Aspire.Hosting.RabbitMQ": {
               "target": "Package",
-              "version": "[9.1.0, )"
+              "version": "[9.2.1, )"
             },
             "Aspire.Hosting.Redis": {
               "target": "Package",
-              "version": "[9.1.0, )"
+              "version": "[9.2.1, )"
             }
           },
           "imports": [
@@ -101,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -161,7 +161,7 @@
           "dependencies": {
             "Aspire.Hosting.Testing": {
               "target": "Package",
-              "version": "[9.1.0, )"
+              "version": "[9.2.1, )"
             },
             "AutoMapper": {
               "target": "Package",
@@ -177,7 +177,7 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[12.4.1, )"
+              "version": "[12.5.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -216,7 +216,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

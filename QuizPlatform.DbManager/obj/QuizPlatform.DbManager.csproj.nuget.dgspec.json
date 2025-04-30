@@ -63,31 +63,31 @@
           "dependencies": {
             "Aspire.Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[9.1.0, )"
+              "version": "[9.2.1, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
@@ -109,7 +109,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -165,19 +165,19 @@
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
@@ -200,7 +200,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -256,31 +256,31 @@
           "dependencies": {
             "Microsoft.Extensions.Http.Resilience": {
               "target": "Package",
-              "version": "[9.2.0, )"
+              "version": "[9.4.0, )"
             },
             "Microsoft.Extensions.ServiceDiscovery": {
               "target": "Package",
-              "version": "[9.1.0, )"
+              "version": "[9.2.1, )"
             },
             "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
               "target": "Package",
-              "version": "[1.11.1, )"
+              "version": "[1.11.2, )"
             },
             "OpenTelemetry.Extensions.Hosting": {
               "target": "Package",
-              "version": "[1.11.1, )"
+              "version": "[1.11.2, )"
             },
             "OpenTelemetry.Instrumentation.AspNetCore": {
               "target": "Package",
-              "version": "[1.11.0, )"
+              "version": "[1.11.1, )"
             },
             "OpenTelemetry.Instrumentation.Http": {
               "target": "Package",
-              "version": "[1.11.0, )"
+              "version": "[1.11.1, )"
             },
             "OpenTelemetry.Instrumentation.Runtime": {
               "target": "Package",
-              "version": "[1.11.0, )"
+              "version": "[1.11.1, )"
             }
           },
           "imports": [
@@ -302,7 +302,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
