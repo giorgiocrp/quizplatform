@@ -307,10 +307,6 @@ node_modules/
 *.dsw
 *.dsp
 
-# Visual Studio 6 technical files
-*.ncb
-*.aps
-
 # Visual Studio LightSwitch build output
 **/*.HTMLClient/GeneratedArtifacts
 **/*.DesktopClient/GeneratedArtifacts
@@ -404,38 +400,38 @@ FodyWeavers.xsd
 *.sln.iml
 /.idea/.idea.QuizPlatform/.idea/workspace.xml
 /.vs/QuizPlatform/CopilotIndices/17.12.53.23981/SemanticSymbols.db-shm
-/QuizPlatform.ApiService/[Bb]in/*
+/QuizPlatform.ApiService/[Bb]in/
 
-/QuizPlatform.ApiService/[Oo]bj/*
+/QuizPlatform.ApiService/[Oo]bj/
 
-/QuizPlatform.AppHost/[Bb]in/*
+/QuizPlatform.AppHost/[Bb]in/
 
-/QuizPlatform.AppHost/[Oo]bj/*
+/QuizPlatform.AppHost/[Oo]bj/
 
-/QuizPlatform.Db/[Bb]in/*
+/QuizPlatform.Db/[Bb]in/
 
-/QuizPlatform.Db/[Oo]bj/*
+/QuizPlatform.Db/[Oo]bj/
 
-/QuizPlatform.DbManager/[Bb]in/*
+/QuizPlatform.DbManager/[Bb]in/
 
-/QuizPlatform.DbManager/[Oo]bj/*
+/QuizPlatform.DbManager/[Oo]bj/
 
-/QuizPlatform.QuizService/[Bb]in/*
+/QuizPlatform.QuizService/[Bb]in/
 
-/QuizPlatform.QuizService/[Oo]bj/*
+/QuizPlatform.QuizService/[Oo]bj/
 
-/QuizPlatform.ReportService/[Bb]in/*
-/QuizPlatform.ReportService/[Oo]bj/*
+/QuizPlatform.ReportService/[Bb]in/
+/QuizPlatform.ReportService/[Oo]bj/
 
-/QuizPlatform.ServiceDefaults/[Bb]in/*
-/QuizPlatform.ServiceDefaults/[Oo]bj/*
+/QuizPlatform.ServiceDefaults/[Bb]in/
+/QuizPlatform.ServiceDefaults/[Oo]bj/
 
-/QuizPlatform.Tests/[Bb]in/*
-/QuizPlatform.Tests/[Oo]bj/*
+/QuizPlatform.Tests/[Bb]in/
+/QuizPlatform.Tests/[Oo]bj/
 
-/QuizPlatform.UserService/[Bb]in/*
-/QuizPlatform.UserService/[Oo]bj/*
+/QuizPlatform.UserService/[Bb]in/
+/QuizPlatform.UserService/[Oo]bj/
 
-/QuizPlatform.Web/[Bb]in/*
-/QuizPlatform.Web/[Oo]bj/*
+/QuizPlatform.Web/[Bb]in/
+/QuizPlatform.Web/[Oo]bj/
 
